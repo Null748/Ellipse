@@ -1,35 +1,115 @@
-<title>Ellipse</title>
-<link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2021/07/02/04/48/check-6380867_1280.png">
-<h1>Ellipse</h1>
-<p>...</p>
-<h4>not all buttons are programmed</h4>
-<a href=""><button>A</button></a>
-<a href=""><button>B</button></a>
-<a href=""><button>C</button></a>
-<a href=""><button>D</button></a>
-<a href=""><button>E</button></a>
-<a href=""><button>F</button></a>
-<a href=""><button>G</button></a>
-<a href=""><button>H</button></a>
-<a href=""><button>I</button></a>
-<a href=""><button>J</button></a>
-<a href=""><button>K</button></a>
-<a href=""><button>L</button></a>
-<a href=""><button>M</button></a>
-<a href=""><button>N</button></a>
-<a href=""><button>O</button></a>
-<a href=""><button>P</button></a>
-<a href=""><button>Q</button></a>
-<a href=""><button>R</button></a>
-<a href=""><button>S</button></a>
-<a href=""><button>T</button></a>
-<a href=""><button>U</button></a>
-<a href=""><button>V</button></a>
-<a href=""><button>W</button></a>
-<a href=""><button>X</button></a>
-<a href=""><button>Y</button></a>
-<a href=""><button>Z</button></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellipse</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --accent-color: #4a90e2;
+            --hover-color: #357abd;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
+        .bio-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
 
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
 
+        h1 {
+            font-size: 1.8rem;
+            margin: 10px 0 5px 0;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .bio-link {
+            display: block;
+            padding: 12px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .bio-link:hover {
+            background-color: var(--hover-color);
+            transform: translateY(-2px);
+        }
+
+        .bio-link:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-card">
+        <img src="https://cdn.phototourl.com/free/2026-06-03-6f5a3a9e-ce41-4194-8a81-481a67a53712.jpg" alt="Profile Picture" class="profile-img">
+        
+        <h1>Your Name</h1>
+        <p class="tagline">Profession / Creative Role</p>
+        <p class="description">
+            Welcome to my page! I am passionate about creating, learning, and sharing ideas. 
+            Here you can find shortcuts to my latest projects and social channels.
+        </p>
+        
+        <div class="links-container">
+            <a href="https://yourportfolio.com" target="_blank" class="bio-link">My Portfolio</a>
+            <a href="https://linkedin.com" target="_blank" class="bio-link">LinkedIn</a>
+            <a href="https://github.com" target="_blank" class="bio-link">GitHub</a>
+            <a href="mailto:your.email@example.com" class="bio-link">Contact Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
